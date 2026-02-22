@@ -1,46 +1,67 @@
-# 🏥 SMART HEALTH 360° 
+# 🏥 SMART HEALTH 360°
 ### Sistema Inteligente de Conversão de Pacientes
 
-O **Smart Health 360°** é uma solução baseada em Inteligência Artificial e Análise Preditiva desenvolvida para reduzir taxas de *no-show* e aumentar a conversão de pacientes na rede hospitalar. O projeto foi desenhado como uma proposta estratégica para a **Rede Mater Dei**, integrando Machine Learning, automação de comunicação e dashboards gerenciais.
+O **Smart Health 360°** é uma solução baseada em **Inteligência Artificial e Análise Preditiva** desenvolvida para reduzir taxas de *no-show* e aumentar a conversão de pacientes na rede hospitalar.
+
+O projeto foi desenhado como proposta estratégica para a **Rede Mater Dei**, integrando Machine Learning, automação de comunicação e dashboards gerenciais em nuvem.
 
 ---
 
-## 👥 Desenvolvedores (Turma 2TSC0 - FIAP)
-* **[Caio Guimarães Souza Gonçalves](https://github.com/caioguimaraes18)**
-* **[Eric Yuiti Ito Nissi](https://github.com/YuitiNissi)**
-* **[João Paulo Ferreira](https://github.com/joao-paulo-alt)**
-* **Natália Guimarães Barbosa dos Santos**
+## 👥 Desenvolvedores  
+**Turma 2TSC0 — FIAP**
+
+- **[Caio Guimarães Souza Gonçalves](https://github.com/caioguimaraes18)**
+- **[Eric Yuiti Ito Nissi](https://github.com/YuitiNissi)**
+- **[João Paulo Ferreira](https://github.com/joao-paulo-alt)**
+- **Natália Guimarães Barbosa dos Santos**
 
 ---
 
 ## 🎯 O Problema
-O setor de saúde privada enfrenta desafios críticos que impactam a sustentabilidade financeira:
-* **No-show Crônico:** 1 em cada 5 pacientes não comparece às consultas (média de 20.1%).
-* **Baixa Conversão:** Mais de 60% dos interessados não se tornam pacientes ativos.
-* **Comunicação Ineficaz:** Lembretes genéricos que não consideram o perfil comportamental do paciente.
-* **Impacto Financeiro:** Perda de receita estimada em milhões devido a agendas ociosas.
+
+O setor de saúde privada enfrenta desafios críticos que impactam diretamente a sustentabilidade financeira e operacional:
+
+- **No-show Crônico:** 1 em cada 5 pacientes não comparece às consultas (média de 20,1%).
+- **Baixa Conversão:** Mais de 60% dos interessados não se tornam pacientes ativos.
+- **Comunicação Ineficaz:** Lembretes genéricos que não consideram perfil comportamental.
+- **Impacto Financeiro:** Perda de receita estimada em milhões devido a agendas ociosas.
+
+---
 
 ## 💡 A Solução
+
 A plataforma atua em toda a jornada do paciente através de:
-1. **Análise Preditiva:** Cálculo de **Score de Risco (0–100)** para identificar pacientes propensos a faltar.
-2. **IA Generativa:** Criação de mensagens personalizadas (*Nudges Digitais*) via OpenAI API.
-3. **Automação via WhatsApp:** Comunicação direta para engajamento e confirmação.
-4. **Dashboards Gerenciais:** Monitoramento de KPIs em tempo real para tomada de decisão.
+
+1. **Análise Preditiva**  
+   Cálculo de **Score de Risco (0–100)** para identificar pacientes propensos a faltar.
+
+2. **IA Generativa**  
+   Criação de mensagens personalizadas (*Nudges Digitais*) via OpenAI API.
+
+3. **Automação via WhatsApp**  
+   Comunicação direta para confirmação e reagendamento.
+
+4. **Dashboards Gerenciais**  
+   Monitoramento de KPIs em tempo real para tomada de decisão.
 
 ---
 
 ## 🏗️ Arquitetura e Fluxo Técnico
-A infraestrutura é baseada na nuvem **Microsoft Azure**:
-* **Data Lake:** Azure Blob Storage para armazenamento de dados brutos.
-* **Banco de Dados:** Azure SQL Database para dados estruturados.
-* **Processamento:** Python Backend para orquestração.
-* **ML Model:** Modelos de *Random Forest* e *Gradient Boosting* com **acurácia média de 87%**.
-* **IA Generativa:** Agente de IA para personalização de mensagens.
-* **Visualização:** Dashboards desenvolvidos em **Power BI** e **Streamlit**.
+
+Infraestrutura baseada em **Microsoft Azure**:
+
+- **Data Lake:** Azure Blob Storage  
+- **Banco de Dados:** Azure SQL Database  
+- **Processamento:** Python Backend  
+- **Modelos de ML:** Random Forest + Gradient Boosting  
+- **Acurácia média:** **87%**  
+- **IA Generativa:** Personalização de mensagens  
+- **Visualização:** Power BI e Streamlit  
 
 ---
 
 ## 📂 Estrutura do Repositório
+
 ```text
 smart-health-360/
 ├── dados/           # Bases tratadas e de modelagem (CSV)
@@ -48,25 +69,7 @@ smart-health-360/
 ├── app/             # Aplicação interativa (Streamlit)
 ├── modelos/         # Arquivos dos modelos treinados (.pkl)
 └── README.md        # Documentação do projeto
-
-## 📈 Impacto e Resultados Projetados (6 meses)
-
-- **Redução de No-show:** De 13% para 6% (**queda de 54%**)  
-- **Aumento de Conversão:** De 35% para 52%  
-- **ROI Estimado:** 340% no primeiro ano  
-- **Receita Adicional:** Estimativa de **R$ 8,4 milhões/ano**
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-- **Linguagem:** Python (Pandas, Scikit-learn, Seaborn)  
-- **Cloud:** Microsoft Azure  
-- **IA:** OpenAI API  
-- **Visualização:** Power BI e Streamlit  
-
----
-
+```
 <br>
 
 ---
