@@ -1,113 +1,120 @@
-# <Título do projeto>
+# 🏥 SMART HEALTH 360° 
+### Sistema Inteligente de Conversão de Pacientes
 
-Insira aqui um resumo do projeto que será construído. Tente apresentar uma justificativa para o projeto. É desejável que também se insira um [graphical abstract](https://www.elsevier.com/authors/tools-and-resources/visual-abstract).
-
-## Desenvolvedores
- - [Nome do desenvolvedor #1](url-do-github-do-desenvolvedor-#1)
- - [Nome do desenvolvedor #2](url-do-github-do-desenvolvedor-#2)
- - [Nome do desenvolvedor #3](url-do-github-do-desenvolvedor-#3)
- - [Nome do desenvolvedor #4](url-do-github-do-desenvolvedor-#4)
- - ...
+O **Smart Health 360°** é uma solução baseada em Inteligência Artificial e Análise Preditiva desenvolvida para reduzir taxas de *no-show* e aumentar a conversão de pacientes na rede hospitalar. O projeto foi desenhado como uma proposta estratégica para a **Rede Mater Dei**, integrando Machine Learning, automação de comunicação e dashboards gerenciais.
 
 ---
 
-> **Nota**: todo o texto abaixo é somente para entendimento do usuário do template. Por favor remova-o quando for atualizar este `README.md`.
+## 👥 Desenvolvedores (Turma 2TSC0 - FIAP)
+* **[Caio Guimarães Souza Gonçalves](https://github.com/caioguimaraes18)**
+* **[Eric Yuiti Ito Nissi](https://github.com/YuitiNissi)**
+* **[João Paulo Ferreira](https://github.com/joao-paulo-alt)**
+* **Natália Guimarães Barbosa dos Santos**
 
-## Funcionalidades
+---
 
-Esse template foi inicialmente baseado no [template de ciência de dados do cookiecutter](https://drivendata.github.io/cookiecutter-data-science/), mas ao longo do tempo várias modificações foram sendo realizadas. Atualmente o template tem as seguintes características:
- - Utilização do arquivo `pyproject.toml` como centralizador de dependências;
- - Configuração para criação de aplicação `streamlit`;
- - Utilização de [jupyter notebooks](https://jupyter.org/) para arquivos de análise;
- - Documentação com o [mkdocs](https://www.mkdocs.org/) ([material design](https://squidfunk.github.io/mkdocs-material/) theme)
+## 🎯 O Problema
+O setor de saúde privada enfrenta desafios críticos que impactam a sustentabilidade financeira:
+* **No-show Crônico:** 1 em cada 5 pacientes não comparece às consultas (média de 20.1%).
+* **Baixa Conversão:** Mais de 60% dos interessados não se tornam pacientes ativos.
+* **Comunicação Ineficaz:** Lembretes genéricos que não consideram o perfil comportamental do paciente.
+* **Impacto Financeiro:** Perda de receita estimada em milhões devido a agendas ociosas.
 
-## Instruções
+## 💡 A Solução
+A plataforma atua em toda a jornada do paciente através de:
+1. **Análise Preditiva:** Cálculo de **Score de Risco (0–100)** para identificar pacientes propensos a faltar.
+2. **IA Generativa:** Criação de mensagens personalizadas (*Nudges Digitais*) via OpenAI API.
+3. **Automação via WhatsApp:** Comunicação direta para engajamento e confirmação.
+4. **Dashboards Gerenciais:** Monitoramento de KPIs em tempo real para tomada de decisão.
 
-### Requisitos
+---
 
-Para utilizar este template, você precisará de um ambiente com os seguintes softwares:
- - git
- - Python 3.8
- - Poetry `1.1.13` ou superior
+## 🏗️ Arquitetura e Fluxo Técnico
+A infraestrutura é baseada na nuvem **Microsoft Azure**:
+* **Data Lake:** Azure Blob Storage para armazenamento de dados brutos.
+* **Banco de Dados:** Azure SQL Database para dados estruturados.
+* **Processamento:** Python Backend para orquestração.
+* **ML Model:** Modelos de *Random Forest* e *Gradient Boosting* com **acurácia média de 87%**.
+* **IA Generativa:** Agente de IA para personalização de mensagens.
+* **Visualização:** Dashboards desenvolvidos em **Power BI** e **Streamlit**.
 
-É aconselhável o uso do `pyenv` para o gerenciamento de versões do Python.
+---
 
-### Iniciando um novo projeto
+## 📂 Estrutura do Repositório
+```text
+smart-health-360/
+├── dados/           # Bases tratadas e de modelagem (CSV)
+├── notebooks/       # Preparação, EDA, Modelagem e Dashboards (.ipynb)
+├── app/             # Aplicação interativa (Streamlit)
+├── modelos/         # Arquivos dos modelos treinados (.pkl)
+└── README.md        # Documentação do projeto
 
-Para iniciar um novo projeto você precisa ter instalado na sua máquina as aplicações citadas na seção anterior, depois disso basta:
+## 📈 Impacto e Resultados Projetados (6 meses)
 
-1. clicar no botão **Use this template** (ou "Usar este modelo").
-2. Digitar um nome para seu repositório e uma descrição opcional.
-3. Escolher a visibilidade do projeto (Publica ou privada).
-4. Clicar em **Create repository from template** (Criar repositório a partir do modelo).
+- **Redução de No-show:** De 13% para 6% (**queda de 54%**)  
+- **Aumento de Conversão:** De 35% para 52%  
+- **ROI Estimado:** 340% no primeiro ano  
+- **Receita Adicional:** Estimativa de **R$ 8,4 milhões/ano**
 
-Pronto, acaba de criar um repositório a partir deste modelo. Para mais informações sobre o uso de templates, acesse a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+---
 
+## 🛠️ Tecnologias Utilizadas
 
-### Contribuindo com um repositório já criado
+- **Linguagem:** Python (Pandas, Scikit-learn, Seaborn)  
+- **Cloud:** Microsoft Azure  
+- **IA:** OpenAI API  
+- **Visualização:** Power BI e Streamlit  
 
-Depois de criar o repositório, para começar a modificá-lo e/ou contribuir com repositórios já criados,  você precisa cloná-lo. Para isso, siga os seguintes passos:
+---
 
-1. Acima da lista de arquivos, clique no botão **Code** (em verde).
-2. Copie a URL para o repositório.
-    - Tente clonar utilizando uma chave **SSH**. Para isso, clique na aba **SSH** e em seguida clique no ícone de cópia.
-3. Abra o terminal.
-4. Altere o diretório de trabalho atual para o local que deseja ter o diretório clonado.
-5. Digite `git clone` e cole a URL que você copiou anteriormente:
+<br>
 
-```
-git clone git@github.com:NOME-DE-USUARIO/REPOSITORIO.git
-```
-6. Pressione **Enter** para criar seu clone local.
+---
 
-Proto, com isso você acaba de clonar um repositório. Para mais informações sobre a clonagem de arquivos, acesse a [documentação oficial](https://docs.github.com/pt/repositories/creating-and-managing-repositories/cloning-a-repository).
+<div align="center">
 
-Com o repositório clonado, você precisa navegar até a pasta local, usando o comando :
+## ⚖️ Licença
 
-```
-cd REPOSITORIO
-```
+Este projeto está sob a licença **MIT License**  
+📄 Consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.
 
-Estando na pasta do repositório, basta instalar as dependências do projeto utilizando o comando:
+</div>
 
-```
-poetry install
-```
+---
 
-Ele irá instalar todas as dependências contidas no arquivo `pyproject.toml`. Depois disso basta ativar o ambiente virtual criado pelo Poetry utilizando o comando:
+<br>
 
-```
-poetry shell
-```
+<div align="center">
 
-Para mais informações sobre os comandos do Poetry, visite a [documentação oficial](https://python-poetry.org/docs/).
+## 🎓 Projeto Acadêmico
 
-Para contribuir com um projeto, tente utilizar uma metodologia adequada. Utilize [este artigo](https://omadson.github.io/site/blog/2022/software-development-workflow/) para obter mais informações.
+Desenvolvido na **FIAP** como iniciativa estratégica de  
+**Transformação Digital na Saúde Privada Brasileira**
 
+Aplicando:
 
-### Organização de diretórios
+🧠 Ciência de Dados  
+🤖 Machine Learning  
+☁️ Arquitetura em Nuvem  
+📊 Business Intelligence  
+✨ IA Generativa  
 
+</div>
 
-```
-.
-├── data/              # Diretório contendo todos os arquivos de dados
-│   ├── external/      # Arquivos de dados de fontes externas
-│   ├── interim/       # Arquivos de dados intermediários
-│   ├── processed/     # Arquivos de dados processados
-│   └── raw/           # Arquivos de dados originais, imutáveis
-├── docs/              # Documentação gerada através da biblioteca mkdocs
-├── models/            # Modelos treinados e serializados, predições ou resumos de modelos
-├── notebooks/         # Diretório contendo todos os notebooks utilizados nos passos
-├── references/        # Dicionários de dados, manuais e todo o material exploratório
-├── src/               # Código fonte utilizado nesse projeto
-│   ├── data/          # Classes e funções utilizadas para download e processamento de dados
-│   ├── deployment/    # Classes e funções utilizadas para implantação do modelo
-│   └── model/         # Classes e funções utilizadas para modelagem
-├── app.py             # Arquivo com o código da aplicação do streamlit
-├── Procfile           # Arquivo de configuração do heroku
-├── pyproject.toml     # Arquivo de dependências para reprodução do projeto
-├── poetry.lock        # Arquivo com sub-dependências do projeto principal
-├── README.md          # Informações gerais do projeto
-└── tasks.py           # Arquivo com funções para criação de tarefas utilizadas pelo invoke
+<br>
 
-```
+---
+
+<div align="center">
+
+## 🚀 Smart Health 360°
+
+**Transformando dados em decisões.  
+Decisões em impacto.  
+Impacto em resultado.**
+
+</div>
+
+---
+
+<br>
