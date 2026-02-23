@@ -70,54 +70,26 @@ smart-health-360/
 ├── modelos/         # Arquivos dos modelos treinados (.pkl)
 └── README.md        # Documentação do projeto
 ```
-<br>
-
 ---
 
 <div align="center">
 
-## ⚖️ Licença
+### 📄 Licença
 
-Este projeto está sob a licença **MIT License**  
-📄 Consulte o arquivo [`LICENSE`](LICENSE) para mais detalhes.
-
-</div>
-
----
+Este projeto está distribuído sob a **MIT License**.  
+Para mais informações, consulte o arquivo [`LICENSE`](LICENSE).
 
 <br>
 
-<div align="center">
-
-## 🎓 Projeto Acadêmico
-
-Desenvolvido na **FIAP** como iniciativa estratégica de  
-**Transformação Digital na Saúde Privada Brasileira**
-
-Aplicando:
-
-🧠 Ciência de Dados  
-🤖 Machine Learning  
-☁️ Arquitetura em Nuvem  
-📊 Business Intelligence  
-✨ IA Generativa  
-
-</div>
+<sub>
+Projeto acadêmico desenvolvido na FIAP (2026) como aplicação prática de Ciência de Dados,  
+Machine Learning e Arquitetura em Nuvem voltados à gestão hospitalar e transformação digital na saúde privada brasileira.
+</sub>
 
 <br>
 
----
-
-<div align="center">
-
-## 🚀 Smart Health 360°
-
-**Transformando dados em decisões.  
-Decisões em impacto.  
-Impacto em resultado.**
+<sub>
+Smart Health 360° • Todos os direitos reservados aos autores
+</sub>
 
 </div>
-
----
-
-<br>
